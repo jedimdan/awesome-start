@@ -19,6 +19,7 @@ env:
     - password=""
 
 after_script:
-  - git clone --quiet --branch gh-pages git@github.com:jedimdan/awesome-start.git
-  - $username
+  - git checkout gh-pages
+  - git merge master
+  - git push origin gh-pages
 
