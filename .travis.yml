@@ -18,5 +18,5 @@ env:
     - secure: "C+uo8WcZbDXV0OzDrM8HG6E4fXVFh9NOARQXtQDmTbOSL0I4YGFhayCgZ9Wn\nKAOdsiNId4pWmYyJYsruTuCggZINUBhMAwRNRE4lXkY2lQP/9kszgWfwaMq2\nqMkVE/ELZ5abI7tnY2Z1lS4DRJIsoWw1/x5pnsgOcQdCqnDnHWE="
 
 after_script:
-  - git clone --quiet --branch gh-pages git@github.com:jedimdan/awesome-start.git
+  - git clone --quiet --branch gh-pages git@github.com:jedimdan/awesome-start.git --skip-ssl-verification -t $GITHUB_TOKEN
 
