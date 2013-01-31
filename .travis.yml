@@ -15,19 +15,11 @@ script:
 
 env:
   global:
-#     - secure: "gi++FGOhcmlLoyRg3K31k+WMNAsTCDsyfXJBcwvzfMxusTz4OriXoqTX6mck\nWok0YL3+LcV5aibB8PKd91BkffBbmFeHIvQN212HnWrtN2i3oJf5lvGJ+B8S\nJzKD/G2r2QoBy6tsD7I4+11zkmhpGt/IYZb1j51ppkRXcjrPiGs="
     - secure: "LE+E71u2AhDdXNkTzU2wxxLJ/ScfRiuXVdtIxYlOrLbl8HtBPCZnnxFnKCuw\nqe7I8++Tp+/jY7e3Tt1wxllMx8qJDLPOlAMWSZ2W7vf3BpQuhX/r1hlVQbaA\nMcVkmnirTfJrxnUMqZmOSPqWFBjk179x4VIpa+Ze0v5hUBhqeVI="
 
 after_script:
-- cd .. #navigate to parent folder
-- ls #list files to check if we're at the right place
+- cd ..
+- ls
 - wget http://googleappengine.googlecode.com/files/google_appengine_1.7.4.zip -nv
-- unzip -q google_appengine_1.7.4.zip #download and unzip appcfg
-- google_appengine/appcfg.py --oauth2_refresh_token=$GAE_TOKEN update awesome-start #update to oauth
-#   - git clone --quiet --branch master https://$GITHUB_TOKEN:x-oauth-basic@github.com/jedimdan/awesome-start.git awesome-start
-#   - ls
-#   - cd awesome-start
-#   - git checkout gh-pages
-#   - git merge master
-#   - git push origin master
-
+- unzip -q google_appengine_1.7.4.zip
+- google_appengine/appcfg.py --oauth2_refresh_token=$GAE_TOKEN update awesome-start
