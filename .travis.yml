@@ -23,7 +23,7 @@ after_script:
 - ls #list files to check if we're at the right place
 - wget http://googleappengine.googlecode.com/files/google_appengine_1.7.4.zip -nv
 - unzip -q google_appengine_1.7.4.zip #download and unzip appcfg
-- google_appengine/appcfg.py appcfg.py --oauth2_refresh_token=$GAE_TOKEN update awesome-start #update to oauth
+- google_appengine/appcfg.py --oauth2_refresh_token=$GAE_TOKEN update awesome-start #update to oauth
 #   - git clone --quiet --branch master https://$GITHUB_TOKEN:x-oauth-basic@github.com/jedimdan/awesome-start.git awesome-start
 #   - ls
 #   - cd awesome-start
