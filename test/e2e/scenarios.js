@@ -5,17 +5,19 @@
 describe('my app', function() {
 
   beforeEach(function() {
-    browser().navigateTo('/index.html');
+    browser().navigateTo('../../static/index.html');
   });
 
 
   it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    expect(browser().location().url()).toBe("/static/index.html");
-    pause();
+    expect(element('a.brand').text()).
+        toMatch("BaaS (1234)");
+      pause();
   });
 
 
-  describe('view1', function() {
+  /*
+describe('view1', function() {
 
     beforeEach(function() {
       //browser().navigateTo('#/view1');
@@ -44,4 +46,5 @@ describe('my app', function() {
     });
 
   });
+*/
 });
