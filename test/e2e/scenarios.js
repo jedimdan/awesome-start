@@ -5,12 +5,12 @@
 describe('my app', function() {
 
   beforeEach(function() {
-    browser().navigateTo('../../index.html');
+    browser().navigateTo('/index.html');
   });
 
 
   it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    expect(browser().location().url()).toBe("../../static/index.html");
+    expect(browser().location().url()).toBe("/static/index.html");
     pause();
   });
 
@@ -23,9 +23,9 @@ describe('my app', function() {
 
 
     it('should render view1 when user navigates to /view1', function() {
-      //expect(element('[ng-view] p:first').text()).
-      //  toMatch(/partial for view 1/);
-      //pause();
+      expect(element('a.brand').text()).
+        toMatch("BaaS (1234)");
+      pause();
     });
 
   });

@@ -20,7 +20,7 @@ env:
   global:
     - secure: "LE+E71u2AhDdXNkTzU2wxxLJ/ScfRiuXVdtIxYlOrLbl8HtBPCZnnxFnKCuw\nqe7I8++Tp+/jY7e3Tt1wxllMx8qJDLPOlAMWSZ2W7vf3BpQuhX/r1hlVQbaA\nMcVkmnirTfJrxnUMqZmOSPqWFBjk179x4VIpa+Ze0v5hUBhqeVI="
 
-after_script:
+after_success:
 - cd ..
 - ls
 - wget http://googleappengine.googlecode.com/files/google_appengine_1.7.4.zip -nv

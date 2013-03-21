@@ -12,11 +12,9 @@ browsers = ['Chrome'];
 
 singleRun = true;
 
-/*
 proxies = {
   '/': 'http://localhost:8000/'
 };
-*/
 
 junitReporter = {
   outputFile: 'test_out/e2e.xml',
