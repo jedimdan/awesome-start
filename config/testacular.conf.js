@@ -5,9 +5,7 @@ files = [
   JASMINE_ADAPTER,
   'static/lib/angular/angular.js',
   'static/lib/angular/angular-*.js',
-  'test/lib/angular/angular-mocks.js',
-  'static/js/**/*.js',
-  'test/unit/**/*.js'
+  'static/js/**/*.js'
 ];
 
 autoWatch = true;
