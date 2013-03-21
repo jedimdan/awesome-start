@@ -5,11 +5,11 @@
 describe('my app', function() {
 
   beforeEach(function() {
-    browser().navigateTo('../../static/index.html');
+    browser().navigateTo('/static/index.html');
   });
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+  it('should load the page and find the API key', function() {
     expect(element('a.brand').text()).
         toMatch("BaaS (1234)");
       pause();
