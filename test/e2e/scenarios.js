@@ -11,8 +11,7 @@ describe('my app', function() {
 
   it('should load the page and find the API key', function() {
     expect(element('a.brand').text()).
-        toBe('BaaS (1234)');
-      pause();
+        toBe('BaaS');
   });
 
 
